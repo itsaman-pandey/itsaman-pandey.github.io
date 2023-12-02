@@ -16,6 +16,14 @@
         h1 {
             color: #333; /* Set your preferred text color */
             margin-top: 50px;
+            font-size: 2em;
+            position: relative;
+        }
+
+        .animated-number {
+            display: inline-block;
+            position: relative;
+            animation: bounce 1s infinite;
         }
 
         .photo-container {
@@ -45,10 +53,22 @@
                 transform: translateY(0);
             }
         }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Happy 19th Birthday, Devika!</h1>
+    <h1>Happy <span class="animated-number">19</span>th Birthday, Devika!</h1>
 
     <div class="photo-container">
         <img class="photo" src="photo1.jpg" alt="Photo 1">
