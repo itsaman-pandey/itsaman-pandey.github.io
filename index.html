@@ -1,59 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Happy Birthday, Devika!</title>
-<style>
-body {
-  font-family: 'Playfair Display', serif; /* Elegant font for a special occasion */
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Devika!</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #300046, #0b8793);
+      color: #ffffff;
+      overflow: hidden;
+    }
 
-main {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  text-align: center;
-}
+    main {
+      background: none;
+      padding: 20px;
+      text-align: center;
+      margin: 20px;
+      max-width: 600px;
+      margin: auto;
+      overflow-y: scroll;
+      max-height: 80vh;
+    }
 
-h1 {
-  font-size: 4em;
-  color: #e95420; /* Vibrant color for a joyful tone */
-  margin-bottom: 20px;
-}
+    h1, p, .romantic-text {
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
 
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
+    img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards 1s;
+    }
 
-img {
-  width: 300px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-</style>
+    .romantic-text {
+      color: #ffb6c1; /* Romantic pink */
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <main>
-  <h1>Happy Birthday, Devika!</h1>
-  <img src="https://example.com/devika-photo.jpg" alt="Devika's Photo"> <p>My dearest Devika,</p>
+  <h1>Happy Birthday, Devika! 🎉</h1>
+  <img src="devika.jpeg" alt="Devika's Photo">
+  <p class="romantic-text">My dearest Devika, 💖</p>
+  <p>From the moment I met you, 💫</p>
+  <p>I knew you were someone extraordinary. 🌟</p>
+  <p>Your warmth, your kindness, your radiant smile—</p>
+  <p>they all captivated me completely. 😍</p>
+  <p>Today, as we celebrate your birthday, 🎂</p>
+  <p>I want to tell you how much you mean to me. 💕</p>
+  <p>I love how you make me laugh every day, 😄</p>
+  <p>how you challenge me to be a better person, 💪</p>
+  <p>and how you always know how to make me feel special. 🌹</p>
+  <p>You're my best friend, my lover, and my soulmate. 👫</p>
+  <p>I'm so grateful to have you in my life. 🙏</p>
+  <p>I wish you all the happiness in the world, today and always. 🌈</p>
+  <p>May your dreams come true, 🌠</p>
+  <p>and may our love continue to grow stronger with each passing year. 💑</p>
+  <p class="romantic-text">With all my love, 😘</p>
+  <p class="romantic-text" style="margin-bottom: 15px;">Yours and only yours, ammuu 💖</p>
+</main>
 
-  <p>From the moment I met you, I knew you were someone extraordinary. Your warmth, your kindness, your radiant smile—they all captivated me completely. Today, as we celebrate your birthday, I want to tell you how much you mean to me.</p>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var elementsToAnimate = document.querySelectorAll("h1, p, .romantic-text, img");
+    var delay = 0;
 
-  <p>I love how you make me laugh every day, how you challenge me to be a better person, and how you always know how to make me feel special. You're my best friend, my lover, and my soulmate. I'm so grateful to have you in my life.</p>
-
-  <p>I wish you all the happiness in the world, today and always. May your dreams come true, and may our love continue to grow stronger with each passing year.</p>
-
-  <p>With all my love,</p>
-  <p>[Your Name]</p> </main>
+    elementsToAnimate.forEach(function (element) {
+      element.style.animationDelay = delay + "s";
+      delay += 0.5;
+    });
+  });
+</script>
 
 </body>
 </html>
