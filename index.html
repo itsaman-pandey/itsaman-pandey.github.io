@@ -1,95 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday, Devika!</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap">
-  <style>
-    body {
-      font-family: 'Playfair Display', serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom, #300046, #0b8793);
-      color: #ffffff;
-      overflow: hidden;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    main {
-      background: none;
-      padding: 20px;
-      text-align: center;
-      margin: 20px;
-      max-width: 600px;
-      margin: auto;
-      overflow-y: scroll;
-      max-height: 80vh;
-    }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
 
-    h1, p, .romantic-text {
-      opacity: 0;
-      animation: fadeIn 2s ease forwards;
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-    img {
-      width: 100%;
-      max-width: 250px;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      opacity: 0;
-      animation: fadeIn 2s ease forwards 1s;
-    }
+        nav li {
+            display: inline;
+            margin: 10px;
+        }
 
-    .romantic-text {
-      color: #ffb6c1; /* Romantic pink */
-      font-weight: bold;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-  </style>
+        section {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<main>
-  <h1>Happy Birthday, Devika! 🎉</h1>
-  <img src="devika.jpeg" alt="Devika's Photo">
-  <p class="romantic-text">My dearest Devika, 💖</p>
-  <p>From the moment I met you, 💫</p>
-  <p>I knew you were someone extraordinary. 🌟</p>
-  <p>Your warmth, your kindness, your radiant smile—</p>
-  <p>they all captivated me completely. 😍</p>
-  <p>Today, as we celebrate your birthday, 🎂</p>
-  <p>I want to tell you how much you mean to me. 💕</p>
-  <p>I love how you make me laugh every day, 😄</p>
-  <p>how you challenge me to be a better person, 💪</p>
-  <p>and how you always know how to make me feel special. 🌹</p>
-  <p>You're my best friend, my lover, and my soulmate. 👫</p>
-  <p>I'm so grateful to have you in my life. 🙏</p>
-  <p>I wish you all the happiness in the world, today and always. 🌈</p>
-  <p>May your dreams come true, 🌠</p>
-  <p>and may our love continue to grow stronger with each passing year. 💑</p>
-  <p class="romantic-text">With all my love, 😘</p>
-  <p class="romantic-text" style="margin-bottom: 15px;">Yours and only yours, ammuu 💖</p>
-</main>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var elementsToAnimate = document.querySelectorAll("h1, p, .romantic-text, img");
-    var delay = 0;
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer</p>
+    </section>
 
-    elementsToAnimate.forEach(function (element) {
-      element.style.animationDelay = delay + "s";
-      delay += 0.5;
-    });
-  });
-</script>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Your introduction and personal information go here.</p>
+    </section>
 
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <!-- Include your resume content here -->
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Showcase your projects here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Include your contact information and a contact form if needed -->
+    </section>
+
+    <script>
+        // Add JavaScript code here if needed
+    </script>
 </body>
 </html>
