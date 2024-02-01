@@ -1,83 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Aman Pandey - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
 
-        nav {
-            background-color: #333;
+        header {
+            background-color: #007BFF;
             color: white;
+            padding: 1em 0;
             text-align: center;
         }
 
-        nav ul {
-            list-style: none;
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin: 0;
             padding: 0;
+        }
+
+        p {
+            color: #777;
+            font-size: 1.2em;
             margin: 0;
         }
 
-        nav li {
-            display: inline;
-            margin: 10px;
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            opacity: 0; /* initially set opacity to 0 */
+            animation: fadeIn 1.5s ease-in-out forwards; /* fade-in animation */
         }
 
-        section {
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        section:nth-child(odd) {
+            background-color: #f8f8f8;
+        }
+
+        .project-item:hover {
+            background-color: #eaeaea;
+        }
+
+        /* New styling for contact section */
+        #contact {
+            background-color: #007BFF;
+            color: white;
             padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .contact-item {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            p,
+            .contact-item {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
+
 <body>
-
-    <!-- Navigation Section -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer</p>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
+    <header>
+        <h1>Aman Pandey</h1>
+        <p>Computer Science Enthusiast</p>
+    </header>
+    <section>
         <h2>About Me</h2>
-        <p>Your introduction and personal information go here.</p>
+        <p class="typing-container">
+            <span class="typing-text">A highly motivated and resourceful Computer Science and Engineering student with a
+                strong foundation in programming languages such as C, C++, Dart, Flutter, and Python. Proficient in
+                various frameworks, including Flask and Flutter, showcasing versatility in web and mobile application
+                development. Experienced in embedded systems projects, IoT technologies, and protocols. Possesses a keen
+                interest in machine learning algorithms and frameworks. Acknowledged for exemplary achievements,
+                including a 5-star rating in C++ on HackerRank and serving as the Technical Head in the college's Compuave
+                Society. Received accolades from the College Innovation Society for an outstanding IoT AI-based Rover
+                project. Proven ability to excel in diverse technical environments, coupled with excellent
+                problem-solving and analytical skills.</span>
+        </p>
     </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <!-- Include your resume content here -->
+    <section>
+        <h2>Education</h2>
+        <p>Bachelor of Technology, Computer Science and Engineering</p>
+        <p>I.K.G. Punjab Technical University, Jalandhar, Punjab</p>
+        <p>Overall CGPA: 8.0+</p>
+        <p>May 2024</p>
     </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Showcase your projects here -->
+    <section>
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Sabudh Foundation - Intern</h3>
+            <p>Mohali, Punjab</p>
+            <p>Jan 2023 – June 2023</p>
+            <ul>
+                <li>Gained hands-on experience in developing innovative solutions for the field of IoT.</li>
+                <li>Worked on projects involving a rover and an irrigation system, honing skills in embedded systems,
+                    robotics, and IoT technologies.</li>
+            </ul>
+        </div>
     </section>
-
-    <!-- Contact Section -->
+    <section>
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Automatic Irrigation System</h3>
+            <p>Description: This project focuses on developing an automatic irrigation system using IoT and embedded
+                systems. The system utilizes sensors to monitor soil moisture levels and automatically triggers the
+                irrigation process when necessary. It helps conserve water resources and ensures efficient plant growth
+                by providing the required amount of water. [Details]</p>
+        </div>
+        <div class="project-item">
+            <h3>Restaurant Review Sentiment Analysis</h3>
+            <p>Description: This project involves sentiment analysis of restaurant reviews using natural language
+                processing techniques. By analyzing the sentiment expressed in the reviews, the system classifies them as
+                positive, negative, or neutral. The project utilizes machine learning algorithms and techniques to train
+                the model on a labeled dataset and predict sentiment for new reviews. [Details]</p>
+        </div>
+        <div class="project-item">
+            <h3>ROVER</h3>
+            <p>Description: ROVER is an embedded systems project aimed at building a rover with various functionalities.
+                The project involves designing and implementing a remote-controlled rover capable of traversing different
+                terrains, capturing images, and transmitting real-time video feed. It combines aspects of embedded
+                systems, robotics, and wireless communication to create an interactive and versatile rover. [Details]</p>
+        </div>
+    </section>
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li><a href="URL_for_SQL_Basic_Certification">SQL Basic Certification</a></li>
+            <li><a href="URL_for_SQL_Intermediate_Certification">SQL Intermediate Certification</a></li>
+            <li><a href="URL_for_SQL_Advanced_Certification">SQL Advanced Certification</a></li>
+            <li><a href="URL_for_Problem_Solving_Basic_Certification">Problem Solving Basic Certification</a></li>
+            <li><a href="URL_for_Problem_Solving_Intermediate_Certification">Problem Solving Intermediate
+                    Certification</a></li>
+            <li><a href="URL_for_Python_Certification">Python Certification</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Technical Skills</h2>
+        <p>Proficient in C, C++, Dart, Flutter, Python, SQL, and DBMS.</p>
+        <p>Strong understanding of object-oriented programming concepts and principles.</p>
+        <p>Experience in developing embedded systems projects.</p>
+        <p>Familiarity with IoT technologies and protocols.</p>
+        <p>Knowledge of machine learning algorithms and frameworks.</p>
+        <p>Strong problem-solving and analytical skills.</p>
+    </section>
+    <section>
+        <h2>Additional Skills</h2>
+        <ul>
+            <li>Ability to work effectively in a team environment.</li>
+            <li>Quick learner with a strong work ethic.</li>
+            <li>Attention to detail and ability to meet deadlines.</li>
+        </ul>
+    </section>
     <section id="contact">
         <h2>Contact</h2>
-        <!-- Include your contact information and a contact form if needed -->
+        <div class="contact-item">Email: r.v.amanpandey@gmail.com</div>
+        <div class="contact-item">Phone: +91 8957330616</div>
+        <div class="contact-item">LinkedIn: linkedin.com/in/itsaman-pandey</div>
+        <div class="contact-item">GitHub: github.com/itsaman-pandey</div>
     </section>
-
-    <script>
-        // Add JavaScript code here if needed
-    </script>
+   
 </body>
+
 </html>
